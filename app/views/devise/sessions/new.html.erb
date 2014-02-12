@@ -1,5 +1,4 @@
 
-
 <div class="row">
     <div class="span4">
       <%= simple_form_for(resource, :as => resource_name, :url => session_path(resource_name), html: {class: "well"}) do |f| %>
@@ -13,7 +12,7 @@
           <div><%= f.input :remember_me, as: :boolean %> <%= f.label :remember_me %></div>
         <% end %>
 
-        <div><%= f.submit "Sign in" %></div>
+        <div><%= f.button :submit, "Sign in" %></div>
       </fieldset>
       <% end %>
 
