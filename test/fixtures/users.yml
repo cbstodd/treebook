@@ -3,5 +3,5 @@ colin:
   last_name: "Stodd"
   email: "cbstodd@gmail.com"
   profile_name: "cbstodd"
-  password: "Damntone8"
-  password_confirmation: "Damntone8"
+  password: "password"
+  password_confirmation: "password"
