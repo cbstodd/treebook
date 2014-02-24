@@ -2,18 +2,18 @@
   <div class="navbar navbar-default navbar-fixed-top" role="navigation">
       <div class="container">
           <div class="navbar-header">
-              <a class="navbar-brand" href="status_path">Treebook</a>
+              <a class="navbar-brand"><%= link_to "Treebook", root_path %></a>
               <ul class="nav navbar-nav">
                 <li><%= link_to "All Statuses", feed_path %></li>
-              </ul>      
+              </ul>       
           </div> 
             <div class="navbar-text navbar-right">
               <% if user_signed_in? %>
-                <%= link_to current_user.full_name, edit_path %> | 
-                <%= link_to "Log Out", logout_path %>
+                <%= link_to current_user.full_name, edit_user_registration_path %> | 
+                <%= link_to "Log out", logout_path %>
                 <% else %>
                   <%= link_to "Register", register_path %> | 
-                  <%= link_to "Log In", login_path %>
+                  <%= link_to "Log in", login_path %>
               <% end %>
             </div>       
       </div>
